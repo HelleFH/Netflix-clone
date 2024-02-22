@@ -8,6 +8,6 @@ service.getFilms = async () => {
     } catch (error) {
         console.error('Error fetching or parsing data:', error);
     }
-}
+} 
 
 export default service;
