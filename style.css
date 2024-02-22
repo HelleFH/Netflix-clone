@@ -8,6 +8,7 @@
         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff');
 }
 
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -53,7 +54,6 @@ a {
 img {
     width: 100%;
     display: block;
-    height: 100%;
 }
 
 a:hover {

@@ -1,6 +1,5 @@
 .hover-cards-container .film-card-container {
     cursor: pointer;
-    max-height: 125px;
     position: relative;
     transition: ease-in 0.2s;
     z-index: 9996;
@@ -10,7 +9,6 @@
 
 .hover-cards-container .film-card-container:hover {
     overflow: visible;
-    height: fit-content;
 }
 
 .card img {
@@ -58,6 +56,37 @@
     background-color: #212121;
 }
 
+.favorite-button {
+    position: relative;
+  }
+  
+  .favorite-button::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #141414;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 1px;
+    display: none;
+    font-size: 0.7em;
+    white-space: nowrap;
+  }
+  
+  .favorite-button:hover::before {
+    display: block;
+  }
+  
+  .favorite-button[data-state="favorited"]::before {
+    content: 'Remove from your list';
+  }
+  
+  .favorite-button[data-state="unfavorited"]::before {
+    content: 'Add to your list';
+  }
+  
 
 .play-button {
     background-color: white !important;
