@@ -1,5 +1,5 @@
 // Import the necessary modules
-import service from "/data.service.js";
+import service from "../data.service.js";
 import { createFilmCard } from "./createFilmCard.js";
 
 const app = {};
