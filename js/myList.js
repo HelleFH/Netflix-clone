@@ -1,6 +1,6 @@
-import { createFilmCard } from "./js/createFilmCard.js";
-import service from './data.service.js';
-import { initializeSearch } from "./js/search.js";
+import { createFilmCard } from "./createFilmCard.js";
+import service from '/data.service.js';
+import { initializeSearch } from "./search.js";
 
 async function displayFavoriteFilms() {
   try {
